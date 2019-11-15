@@ -19,6 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/welcome', function () {
-    return view('welcome');
-})->middleware('auth.basic');
+Route::get('/{path}', 'HomeController@index')->where('path' , '([A-z\d\-\/_.]+)?');
+

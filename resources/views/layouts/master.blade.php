@@ -101,16 +101,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <router-link to="/dashboard" class="nav-link" active-class="active" exact>
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
-                Starter Pages
+                Dashboard
                 <i class="right fa fa-angle-left"></i>
               </p>
-            </a>
+            </router-link>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="#" class="nav-link ">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Active Page</p>
                 </a>
@@ -132,7 +132,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/branches" class="nav-link">
+            <router-link to="/branches" class="nav-link" active-class="active" exact>
               <i class="nav-icon fa fa-users"></i>
               <p>
                 Branches
