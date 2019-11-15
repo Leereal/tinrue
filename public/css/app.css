@@ -28489,6 +28489,46 @@ a.text-muted:hover {
   border-color: #dee2e6;
 }@charset "UTF-8";
 
+.text-blue {
+  color: blue;
+}
+
+.text-indigo {
+  color: indigo;
+}
+
+.text-purple {
+  color: purple;
+}
+
+.text-pink {
+  color: pink;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-teal {
+  color: teal;
+}
+
+.text-cyan {
+  color: cyan;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
