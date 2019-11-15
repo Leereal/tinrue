@@ -8,7 +8,7 @@
             <!-- small card -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>150</h3>
+                <h3>200</h3>
 
                 <p>Total Disbursements</p>
               </div>

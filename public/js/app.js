@@ -18596,7 +18596,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-lg-3 col-6" }, [
           _c("div", { staticClass: "small-box bg-info" }, [
             _c("div", { staticClass: "inner" }, [
-              _c("h3", [_vm._v("150")]),
+              _c("h3", [_vm._v("200")]),
               _vm._v(" "),
               _c("p", [_vm._v("Total Disbursements")])
             ]),
