@@ -18,9 +18,25 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
-$primary-color : #3490dc;
-$secondary-color : #e3342f;
+$primary-color : #000080;
+$secondary-color : #D4AF37;
 
+//Background Colors
+.bg-primary-color{
+	background-color: $primary-color;
+}
+.bg-secondary-color{
+	background-color: $secondary-color;
+}
+
+//Text Colors
+
+.text-primary-color{
+	color: $primary-color;
+}
+.text-secondary-color{
+	color: $secondary-color;
+}
 .text-blue{
 	color:blue;
 }

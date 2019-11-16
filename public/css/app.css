@@ -28489,6 +28489,22 @@ a.text-muted:hover {
   border-color: #dee2e6;
 }@charset "UTF-8";
 
+.bg-primary-color {
+  background-color: #000080;
+}
+
+.bg-secondary-color {
+  background-color: #D4AF37;
+}
+
+.text-primary-color {
+  color: #000080;
+}
+
+.text-secondary-color {
+  color: #D4AF37;
+}
+
 .text-blue {
   color: blue;
 }

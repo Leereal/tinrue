@@ -4,15 +4,26 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('bootstrap');
-require('admin-lte');
+require('bootstrap');//Bootstrap javascript files
+require('admin-lte');//Admin Lte javascript files
 
-window.Vue = require('vue');
 
+window.Vue = require('vue'); 
+window.axios = require('axios');//Require Axios for it to work after installing it
+
+//Importing VForm 
+import { Form, HasError, AlertError } from 'vform'
+window.Form = Form;
+
+//Works with VForm
+Vue.component(HasError.name, HasError)
+Vue.component(AlertError.name, AlertError)
+
+//Vue Router import
 import VueRouter from 'vue-router'
-
 Vue.use(VueRouter)
 
+//Vue Router Routes
 let routes = [
   { path: '/dashboard', component: require('./components/Dashboard.vue').default },
   { path: '/branches', component: require('./components/Branches.vue').default },
@@ -45,6 +56,7 @@ const router = new VueRouter({
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+//Starting the Vue
 const app = new Vue({
     el: '#app',
     router
