@@ -30,7 +30,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
-      </li>      
+      </li>
     </ul>
 
     <!-- SEARCH FORM -->
@@ -46,7 +46,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </form>
 
     <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">      
+    <ul class="navbar-nav ml-auto">
       <!-- Settings Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
@@ -57,19 +57,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <span class="dropdown-header">Settings</span>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fa fa-user mr-2"></i> Profile         
+            <i class="fa fa-user mr-2"></i> Profile
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fa fa-key mr-2"></i> Change Password            
+            <i class="fa fa-key mr-2"></i> Change Password
           </a>
           <div class="dropdown-divider"></div>
           <a href="{{ route('logout') }}" onclick="event.preventDefault();
              document.getElementById('logout-form').submit();" class="dropdown-item text-danger">
-            <i class="fa fa-power-off mr-2"></i>{{ __('Logout') }}          
-          </a>         
-        </div>        
-      </li>      
+            <i class="fa fa-power-off mr-2"></i>{{ __('Logout') }}
+          </a>
+        </div>
+      </li>
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -122,12 +122,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
             </ul>
-          </li>         
+          </li>
           <li class="nav-item">
             <router-link to="/branches" class="nav-link" active-class="active" exact>
               <i class="nav-icon fas fa-code-branch text-yellow"></i>
               <p>
                 Branches
+              </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/profile" class="nav-link" active-class="active" exact>
+              <i class="nav-icon fa fa-user text-orange"></i>
+              <p>
+                Profile
               </p>
             </router-link>
           </li>
@@ -140,12 +148,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </router-link>
           </li>
           <li class="nav-item">
-            <a href="{{ route('logout') }}" class="nav-link" 
+            <a href="{{ route('logout') }}" class="nav-link"
             onclick="event.preventDefault();
              document.getElementById('logout-form').submit();">
              <i class="nav-icon fa fa-power-off text-danger"></i>
              {{ __('Logout') }}
-                           
+
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
@@ -159,7 +167,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">    
+  <div class="content-wrapper">
 
     <!-- Main content -->
     <div class="content">

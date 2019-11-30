@@ -11,7 +11,7 @@ class UserController extends Controller
 {
      public function __construct()
     {
-        $this->middleware('api');
+        $this->middleware('auth:api');
     }
 
     /**
@@ -56,6 +56,34 @@ class UserController extends Controller
         //
     }
 
+      /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function profile()
+    {
+        return auth('api')->user();
+    }
+
+      /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function updateProfile(Request $request)
+    {
+       $user = auth('api')->user();
+       $name = time().'.'.explode('/',explode(':',\substr($request->photo, 0, strpos($request->photo,';')))[1])[1];
+
+
+       $extension = $request->photo;
+       return $extension;
+    }
+
+
     /**
      * Update the specified resource in storage.
      *
@@ -70,7 +98,7 @@ class UserController extends Controller
             'name'=>'required|min:2|max:191',
             'email'=>'required|email|max:191|string|unique:users,email,'.$id,
             'password'=>'sometimes|min:8|max:191'
-        ]);        
+        ]);
         $user->update($request->all());
         return['message'=>'Updated'];
     }
